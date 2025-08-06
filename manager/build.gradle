@@ -1,0 +1,12 @@
+apply plugin: "java-library"
+
+dependencies {
+    api project(":agent")
+    api project(":model")
+    api "io.openremote:openremote-container:$openremoteVersion"
+    api "io.openremote:openremote-manager:$openremoteVersion"
+}
+
+tasks.register('installDist') {
+    dependsOn jar
+}

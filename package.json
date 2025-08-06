@@ -1,0 +1,12 @@
+{
+  "packageManager": "yarn@4.1.0",
+  "private": true,
+  "workspaces": [
+    "ui/app/*",
+    "ui/component/*",
+    "ui/demo/*"
+  ],
+  "devDependencies": {
+    "@openremote/util": "~1.7.0"
+  }
+}
